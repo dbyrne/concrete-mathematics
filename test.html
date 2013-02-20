@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+    </script>
+  </head>
+  <body>
+
+    <h2>
+      Exercise 1.2
+    </h2>
+    <h3>
+      Recurrent relation:
+    <h3/>
+    <p>
+      \(A(0)=0 \\
+      A(n)=3A(n-1)+2, \text{for }n\ge0\)
+    </p>
+    <h3>
+      Closed form hypothesis:
+    </h3>
+    <p>
+      \(A(n)=3^n-1\)
+    </p>
+    <h3>
+      Inductive Proof:
+    </h3>
+    <p>
+      \(A(0)=3^0-1=0 \\
+      A(n)=3(3^{n-1}-1)+2=3^n-1\)
+    </p>
+
+    <h2>
+      Exercise 1.11a
+    </h2>
+    <h3>
+      Recurrent relation:
+    <h3/>
+    <p>
+      \(D(0)=0 \\
+      D(2n)=2D(2n-2)+2, \text{for }n\ge0\)
+    </p>
+    <h3>
+      Closed form hypothesis:
+    </h3>
+    <p>
+      \(D(2n)=2^{n+1}-2\)
+    </p>
+    <h3>
+      Inductive Proof:
+    </h3>
+    <p>
+      \(D(2(0))=2^{0+1}-2=0 \\
+      s = 2n-2 \\
+      D(s) = 2^{(s/2)+1}-2 \\
+      D(2n)=2D(s)+2=2^{(s/2)+2}-4+2=2^{n+1}-2\)
+    </p>
+  </body>
+<html>
