@@ -9,14 +9,14 @@
       Exercise 1.2
     </h2>
     <h3>
-      Recurrent relation:
+      Recurrent Relation:
     <h3/>
     <p>
       \(A(0)=0 \\
       A(n)=3A(n-1)+2, \text{for }n\ge0\)
     </p>
     <h3>
-      Closed form hypothesis:
+      Closed Form Hypothesis:
     </h3>
     <p>
       \(A(n)=3^n-1\)
@@ -33,14 +33,14 @@
       Exercise 1.11a
     </h2>
     <h3>
-      Recurrent relation:
+      Recurrent Relation:
     <h3/>
     <p>
       \(D(0)=0 \\
       D(2n)=2D(2n-2)+2, \text{for }n\ge0\)
     </p>
     <h3>
-      Closed form hypothesis:
+      Closed Form Hypothesis:
     </h3>
     <p>
       \(D(2n)=2^{n+1}-2\)
@@ -54,5 +54,36 @@
       D(s) = 2^{(s/2)+1}-2 \\
       D(2n)=2D(s)+2=2^{(s/2)+2}-4+2=2^{n+1}-2\)
     </p>
+
+    <h2>
+      Exercise 1.15
+    </h2>
+    <p>
+      This is only a partial solution, because it doesn't solve for \(I(2)\)
+    </p>
+    <h3>
+      Recurrent Relation:
+    </h3>
+    <p>
+      \(I(1)=0 \\
+      I(2)=2 \\
+      I(2n)=2I(n)-1,\text{ for }n>0 \\
+      I(2n+1)=2I(n)+1,\text{ for }n>0\)
+    </p>
+    <h3>
+      Closed Form Hypothesis:
+    </h3>
+    <p>
+      \(n=3(2^m)+l,\text{ where }0\le l<3(2^m)\le n \\
+      I(n)=2l+1,\text{ for }n>2\)
+    </p>
+    <h3>
+      Inductive Proof:
+    </h3>
+    <p>
+      Basis:\(I(3)=I(3(2^0)+0)=2(0)+1=1\)<br/>
+      Even:\(I(n)=2(2(l/2)+1)-1=2l+1,\text{ for }n>2\)<br/>
+      Odd:\(I(n)=2((2(l-1)/2)+1)+1=2l+1,\text{ for }n>2\)<br/>
+    </p>      
   </body>
 <html>
