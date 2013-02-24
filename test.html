@@ -30,6 +30,40 @@
     </p>
 
     <h2>
+      Exercise 1.6
+    </h2>
+    <h3>
+      Recurrent Relation:
+    </h3>
+    <p>
+      \(B(2)=0 \\
+      B(n)=B(n-1)+n-2,\text{ for }n>2\)
+    </p>
+    <h3>
+      Unroll The Recurrence:
+    </h3>
+    <p>
+      \(B(n)=B(n-2)+(n-1-2)+(n-2) \\
+      B(n)=0+(3-2)+...+(n-1-2)+(n-2) \\
+      B(n)=0+(n-2)+...+(4-2)+(3-2) \\
+      2B(n)=(n+3-4)(n-2)\)
+    </p>
+    <h3>
+      Closed Form Hypothesis:
+    </h3>
+    <p>
+      \(B(n)=\frac{(n-1)(n-2)}2,\text{ for }n\ge2\)
+    </p>
+    <h3>
+      Inductive Proof:
+    </h3>
+    <p>
+      \(\frac{(2-1)(2-2)}2=0 \\
+      \frac{(n-1)(n-2)}2=\frac{(n-2)(n-3)}2+n-2 \\
+      \frac{n^2-3n+2}2=\frac{n^2-3n+2}2\)
+
+    </p>
+    <h2>
       Exercise 1.11a
     </h2>
     <h3>
@@ -56,11 +90,43 @@
     </p>
 
     <h2>
+      Exercise 13
+    </h2>
+    <h3>
+      Recurrent Relation:
+    </h3>
+    <p>
+      \(Z(0)=1 \\
+      Z(n)=Z(n-1)+9n-8,\text{ for }n>0\)
+    </p>
+    <h3>
+      Unroll The Recurrence:
+    </h3>
+    <p>
+      \(Z(n)=Z(n-2)+(9(n-1)-8)+(9n-8) \\
+      Z(n)=1+(9(1)-8)+(9(2)-8)+...+(9n-8) \\
+      Z(n)=1+(9n-8)+(9(n-1)-8)+...+(9-8) \\
+      2Z(n)=2+n(9(n+1)-16)\)
+    </p>
+    <h3>
+      Closed Form Hypothesis:
+    </h3>
+    <p>
+      \(Z(n)=\frac{n(9n-7)}2+1,\text{ for }n>0\)
+    </p>
+    <h3>
+      Inductive Proof:
+    </h3>
+    <p>
+      \(Z(1)=\frac{1(9(1)-7)}2+1=2 \\
+      Z(n)=\frac{(n-1)(9(n-1)-7)}2+1+9n-8 \\
+      Z(n)=\frac{(n-1)(9n-16)}2+9n-7 \\
+      Z(n)=\frac{9n^2-7n+2}2 \\
+      Z(n)=\frac{n(9n-7)}2+1\)
+
+    <h2>
       Exercise 1.15
     </h2>
-    <p>
-      This is only a partial solution, because it doesn't solve for \(I(2)\)
-    </p>
     <h3>
       Recurrent Relation:
     </h3>
