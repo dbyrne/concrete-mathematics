@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+    </script>
+  </head>
+  <body>
+    <h2>
+      Exercise 2.19
+    </h2>
+    <h3>
+      Recurrent Relation:
+    </h3>
+    <p>
+      \(T_0=5 \\
+      T_n=nT_{n-1}+3 \cdot n!,\text{ for }n>0\)
+    </p>
+    <h3>
+      Apply Summation Factor:
+    </h3>
+    <p>
+      \(a_nT_n=b_nT_{n-1}+c_n,\text{ where } a_n=1,b_n=n,c_n=3 \cdot n! \\
+      s_na_nT_n=s_nb_nT_{n-1}+s_nc_n \\
+      s_nb_n=s_{n-1}a_{n-1} \\
+      s_n=\frac{a_{n-1}a_{n-2}...a_1}{b_nb_{n-1}...b_2} \\
+      s_n=\frac{2^{n-1}}{n!} \\
+      S_n=s_na_nT_n \\
+      S_n=S_{n-1} + \frac {n! \cdot 3 \cdot 2^{n-1}}{n!}=S_{n-1}+3 \cdot 2^{n-1}\)
+    </p>
+    <h3>
+      Unroll The Recurrence:
+    </h3>
+    <p>
+      \(S_n=S_{n-2} + 3 \cdot 2^{n-2} + 3 \cdot 2^{n-1} \\
+      S_n=S_0+3\cdot2^0+3\cdot2^1+...+3\cdot2^{n-1} \\
+      S_n=S_0+ \sum\limits_{k=0}^{n-1} 3 \cdot 2^k\)
+    </p>
+    <h3>
+      Perturb The Sum:
+    </h3>
+    <p>
+      \(F_n=\sum\limits_{k=0}^{n-1} 3 \cdot 2^k \\
+      F_n+3\cdot2^n=\sum\limits_{k=0}^{n} 3 \cdot 2^k \\
+      F_n+3\cdot2^n=3\cdot2^0+\left(\sum\limits_{k=1}^{n} 3 \cdot 2^k\right) \\
+      F_n+3\cdot2^n=3+\left(\sum\limits_{k+1=1}^{n} 3 \cdot 2^{k+1}\right) \\
+      F_n+3\cdot2^n=3+\left(\sum\limits_{k=0}^{n-1} 3 \cdot 2^{k+1}\right) \\
+      F_n+3\cdot2^n=3+2\left(\sum\limits_{k=0}^{n-1} 3 \cdot 2^{k}\right) \\
+      F_n+3\cdot2^n=3+2F_n \\
+      F_n=3(2^n-1)\)
+    </p>
+    <h3>
+      Closed Form Solution:
+    </h3>
+    <p>
+      \(S_n=S_0+3(2^n-1)=3(2^n-1)+2\cdot5\cdot\frac{2^{0-1}}{0!}=3(2^n-1)+5 \\
+      T_n=\frac{S_n}{s_na_n}=\frac{3(2^n-1)+5}{2\cdot\frac{2^{n-1}}{n!}}=
+      \frac{3\cdot2^n+2}{\frac{2^{n}}{n!}}=\frac{3\cdot n!\cdot2^n+2\cdot n!}{2^n}=
+      3\cdot n!+\frac{n!}{2^{n-1}}\)
+    </p>
+  </body>
+</html>
