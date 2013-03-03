@@ -40,9 +40,9 @@
     <p>
       \(F_n=\sum\limits_{k=0}^{n-1} 3 \cdot 2^k \\
       F_n+3\cdot2^n=\sum\limits_{k=0}^{n} 3 \cdot 2^k \\
-      F_n+3\cdot2^n=3\cdot2^0+\left(\sum\limits_{k=1}^{n} 3 \cdot 2^k\right) \\
-      F_n+3\cdot2^n=3+\left(\sum\limits_{k+1=1}^{n} 3 \cdot 2^{k+1}\right) \\
-      F_n+3\cdot2^n=3+\left(\sum\limits_{k=0}^{n-1} 3 \cdot 2^{k+1}\right) \\
+      F_n+3\cdot2^n=3\cdot2^0+\sum\limits_{k=1}^{n} 3 \cdot 2^k \\
+      F_n+3\cdot2^n=3+\sum\limits_{k+1=1}^{n} 3 \cdot 2^{k+1} \\
+      F_n+3\cdot2^n=3+\sum\limits_{k=0}^{n-1} 3 \cdot 2^{k+1} \\
       F_n+3\cdot2^n=3+2\left(\sum\limits_{k=0}^{n-1} 3 \cdot 2^{k}\right) \\
       F_n+3\cdot2^n=3+2F_n \\
       F_n=3(2^n-1)\)
@@ -55,6 +55,50 @@
       T_n=\frac{S_n}{s_na_n}=\frac{3(2^n-1)+5}{2\cdot\frac{2^{n-1}}{n!}}=
       \frac{3\cdot2^n+2}{\frac{2^{n}}{n!}}=\frac{3\cdot n!\cdot2^n+2\cdot n!}{2^n}=
       3\cdot n!+\frac{n!}{2^{n-1}}\)
+    </p>
+    <h2>
+      Exercise 2.21
+    </h2>
+    <h3>
+      Perturb \(S_n=\sum\limits_{k=0}^n(-1)^{n-k}\)
+    </h3>
+    <p>
+      \(S_{n+1}=\sum\limits_{k=0}^{n+1}(-1)^{n-k+1}=
+      (-1)^0+\sum\limits_{k=0}^{n}(-1)^{n-k+1}=1-S_n \\
+      S_{n+1}=(-1)^{n+1}+\sum\limits_{k=1}^{n+1}(-1)^{n-k+1}=
+      (-1)^{n+1}+\sum\limits_{k=0}^{n}(-1)^{n-k+2}=
+      (-1)^{n+1}+S_n \\
+      1-S_n=(-1)^{n+1}+S_n \\
+      S_n=\frac{-(-1)^{n+1}+1}2=\frac{(-1)^n+1}2=[n\text{ is even}]
+      \)
+    </p>
+    <h3>
+      Perturb \(T_n=\sum\limits_{k=0}^n(-1)^{n-k}k\)
+    </h3>
+    <p>
+      \(S_{n+1}=\sum\limits_{k=0}^{n+1}(-1)^{n-k+1}k=
+      (-1)^0(n+1)+\sum\limits_{k=0}^{n}(-1)^{n-k+1}k=
+      n+1-T_n \\
+      S_{n+1}=(-1)^{n+1}\cdot0+\sum\limits_{k=1}^{n+1}(-1)^{n-k+1}k=
+      \sum\limits_{k=0}^{n}(-1)^{n-k+2}(k+1) \\
+      S_{n+1}=\sum\limits_{k=0}^{n}(-1)^{n-k}k+ (-1)^{n-k}=\sum\limits_{k=0}^{n}(-1)^{n-k}k+\sum\limits_{k=0}^{n}(-1)^{n-k} \\
+      n+1-T_n=T_n+S_n \\
+      T_n=\frac{n+1-S_n}2=(n+[n\text{ is odd}])/2\)
+    </p>
+    <h3>
+      Perturb \(U_n=\sum\limits_{k=0}^n(-1)^{n-k^2}\)
+    </h3>
+    <p>
+      \(S_{n+1}=\sum\limits_{k=0}^{n+1}(-1)^{n-k+1}k^2=
+      (n+1)^2+\sum\limits_{k=0}^{n}(-1)^{n-k+1}k^2=
+      (n+1)^2-U_n \\
+      S_{n+1}=\sum\limits_{k=1}^{n+1}(-1)^{n-k+1}k^2=
+      \sum\limits_{k=1}^{n+1}(-1)^{n-k+1}k^2=
+      \sum\limits_{k=0}^{n}(-1)^{n-k+2}(k+1)^2 \\
+      S_{n+1}=\sum\limits_{k=0}^{n}(-1)^{n-k}(k^2+2k+1)=
+      \left(\sum\limits_{k=0}^{n}(-1)^{n-k}k^2\right)+2\left(\sum\limits_{k=0}^{n}(-1)^{n-k}k\right)+\left(\sum\limits_{k=0}^{n}(-1)^{n-k}\right) \\
+      (n+1)^2-U_n=U_n+2T_n+S_n \\
+      U_n=\frac{(n+1)^2-2T_n-S_n}2=\frac{(n+1)^2-n-[n\text{ is odd}]-[n\text{ is even}]}2=\frac{n^2+2n+1-n-1}2=\frac{n(n+1)}2\)
     </p>
   </body>
 </html>
