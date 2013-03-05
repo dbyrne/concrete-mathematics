@@ -101,4 +101,26 @@
       U_n=\frac{(n+1)^2-2T_n-S_n}2=\frac{(n+1)^2-n-[n\text{ is odd}]-[n\text{ is even}]}2=\frac{n^2+2n+1-n-1}2=\frac{n(n+1)}2\)
     </p>
   </body>
+  <h3>
+    Exercise 2.23
+  </h3>
+  <h2>
+    Part B - Summation by Parts
+  </h2>
+  <p>
+    \(\text{Solve }\sum\limits_{k=1}^n\frac{2k+1}{k(k+1)} \\
+    \sum u\Delta v=uv-\sum Ev\Delta u \\
+    u = 2x+1, \Delta v=1/x(x+1)=(x-1)_{-2} \\
+    v=-(x-1)_{-1}=-1/x \\
+    \Delta u = 2, Ev = -1/(x+1) \\
+    \sum\frac{(2x+1)}{x(x+1)}\delta x=
+    \frac{-2x-1}{x}+2\left(\sum x_{-1}\delta x\right)=
+    \frac{-2x-1}{x}+2H_n \\
+    \sum\limits_{k=1}^n\frac{2k+1}{k(k+1)}=
+    \biggl[\frac{-2k-1}{k}+2H_k\biggr]_1^{n+1}=
+    \left(\frac{-2n-3}{n+1}+2H_{n+1}\right)+3-2H_1 \\
+    2H_{n+1}-\frac{2n+3}{n+1}+\frac{n+1}{n+1}=
+    2H_{n+1}-\frac{n+2}{n+1}=
+    2H_n+\frac2{n+1}-\frac{n+2}{n+1}=2H_n-\frac{n}{n+1}\)
+  </p>
 </html>
