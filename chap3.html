@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+    </script>
+  </head>
+  <body>
+    <h2>
+      Exercise 3.7
+    </h2>
+    <h3>
+      Recurrence:
+    </h3>
+    <p>
+      \(X_n=n,\text{ for } 0\le n< m \\
+      X_n=X_{n-m}+1,\text{ for } n\ge m\)
+    </p>
+    <h3>
+      Closed Form Hypothesis:
+    </h3>
+    <p>
+      \(X_n=\lfloor n/m\rfloor+n\text{ mod } m \\
+      X_n=\lfloor n/m \rfloor+n-m\lfloor n/m\rfloor \\
+      X_n=n-(m-1)\lfloor n/m\rfloor\)
+    </p>
+    <h3>
+      Inductive Proof:
+    </h3>
+    <p>
+      \(X_0=0-(m-1)\lfloor 0/m\rfloor=0 \\
+      \lfloor n/m\rfloor=0,\text{ for } 0\le n< m \\
+      X_n=0+n-m(0)=n,\text{ for } 0\le n< m \\
+      X_n=n-m-(m-1)\lfloor(n-m)/m\rfloor+1,\text{ for } n\ge m \\
+      X_n=n-m-(m-1)\lfloor n/m\rfloor+(m-1)+1,\text{ for } n\ge m \\
+      X_n=n-(m-1)\lfloor n/m\rfloor,\text{ for } n\ge m \)
+    </p>
+  </body>
+<html>
