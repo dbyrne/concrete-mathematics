@@ -33,5 +33,23 @@
       X_n=n-m-(m-1)\lfloor n/m\rfloor+(m-1)+1,\text{ for } n\ge m \\
       X_n=n-(m-1)\lfloor n/m\rfloor,\text{ for } n\ge m \)
     </p>
+    <h2>
+      Exercise 3.10
+    </h2>
+    <h3>
+      Show \(\lceil\frac{2x+1}2\rceil-\lceil\frac{2x+1}4\rceil+\lfloor\frac{2x+1}4\rfloor\) 
+      is always \(\lfloor x\rfloor\) or \(\lceil x\rceil\)
+    </h3>
+    <p>
+      \(
+      -\lceil y\rceil + \lfloor y\rfloor=-1,\text{ for } y \notin \Bbb Z\\
+      -\lceil y\rceil + \lfloor y\rfloor=0,\text{ for } y \in \Bbb Z \\
+      \frac{2x+1}2=0 \implies \frac{2x+1}2 \in \{1.5, 3.5, 5.5,...\} \\
+      \{x\}<0.5 \implies \lfloor x\rfloor \\
+      \{x\}>0.5 \implies \lceil x\rceil \\
+      \{x\}=0.5\text{ and }[\lfloor x \rfloor\text{ is even}] \implies \lfloor x\rfloor \\
+      \{x\}=0.5\text{ and }[\lfloor x \rfloor\text{ is odd}] \implies \lceil x\rceil
+      \)
+    </p>
   </body>
 <html>
