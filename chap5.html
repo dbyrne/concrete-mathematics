@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+    </script>
+  </head>
+  <body>
+    <h2>
+      5.2 Basic Practice #1
+    </h2>
+    <p>
+      \(\text{Solve: }\sum\limits_{k=0}^m\binom m k/\binom n k \\
+      \text{Apply Trinomial Revision Identity: } \\
+      \binom r m\binom m k = \binom r k \binom{r-k}{m-k} \\
+      \frac{\binom r m\binom m k}{\binom r m\binom r k} = \frac{\binom r k \binom{r-k}{m-k}}{\binom r m\binom r k} \\
+      \frac{\binom m k}{\binom r k} = \frac{\binom{r-k}{m-k}}{\binom r m} \\
+      \sum\limits_{k=0}^m\frac{\binom m k}{\binom n k}=\sum\limits_{k=0}^m\frac{\binom{n-k}{m-k}}{\binom n m}=
+      \frac{\sum\limits_{k=0}^m\binom{n-k}{m-k}}{\binom n m} \\
+      \text{Apply Parallel Summation Identity: } \\
+      \sum\limits_{k=0}^m\binom{n-k}{m-k}=\sum\limits_{m-k=0}^m\binom{n-(m-k)}{m-(m-k)}=
+      \sum\limits_{k\le m}\binom{n-m+k}k \\
+      \sum\limits_{k\le n}\binom{r+k}k=\binom{r+n+1}n \\
+      \sum\limits_{k\le m}\binom{n-m+k}k=\binom{n+1}m \\
+      \sum\limits_{k=0}^m\binom m k/\binom n k=\binom{n+1}m/\binom n m=\frac{m!(n+1)_m}{m!(n)_m}=\frac{n+1}{n-m+1} \)
+    </p>
+  </body>
+</html>
