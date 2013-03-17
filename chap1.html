@@ -27,6 +27,39 @@
       \(A(0)=3^0-1=0 \\
       A(n)=3(3^{n-1}-1)+2=3^n-1\)
     </p>
+    
+    <h2>
+      Exercise 1.2 Alternative - Generating Functions
+    </h2>
+    <p>
+      \(\text{Recurrent relation} \\
+      A_0=0 \\
+      A_{n+1}=3A_n+2, \text{for }n\ge0 \\
+      \text{Define the generating function} \\
+      G(x)=\sum_{n\ge0}A_nx^n \\
+      \text{Express }A_{n+1}\text{ in terms of }G(x) \\
+      \sum_{n\ge0}A_{n+1}x^n=A_1+A_2x+a_3x^2+...=\{A_1x+A_2x^2+a_3x^3+...\}/x \\
+      \sum_{n\ge0}A_{n+1}x^n=G(x)/x \\
+      \text{Express }3A_{n}+2\text{ in terms of }G(x) \\
+      \sum_{n\ge0}(3A_{n}+2)x^n=3(\sum_{n\ge0}A_{n}x^n)+(\sum_{n\ge0}2x^n)\\
+      \sum_{n\ge0}(3A_{n}+2)x^n=3G(x)+\frac2{1-x},\text{ for }x<1 \\
+      \text{Solve }G(x) \\
+      G(x)/x=3G(x)+\frac2{1-x},\text{ for }x<1 \\
+      G(x)-3xG(x)=\frac{2x}{1-x}=(1-3x)G(x) \\
+      G(x)=\frac{2x}{(1-x)(1-3x)} \\
+      \text{Partial Fractions Expansion} \\
+      \frac{2x}{(1-x)(1-3x)}=\frac{y}{1-x}+\frac{z}{1-3x} \\
+      2x=(1-3x)y+(1-x)z\\
+      (1-3(\frac13))y+(1-\frac13)z=\frac23z=\frac23 \\
+      2x=(1-3x)y+(1-x)\\
+      y=\frac{-1+3x}{1-3x}=-1 \\
+      G(x)=\frac{1}{1-3x}-\frac{1}{1-x},\text{ for }x<1 \\
+      \text{Expand }G(x)\text{ into a power series} \\
+      G(x)=\sum_{n\ge0}(3x)^n - \sum_{n\ge0}x^n=
+      \sum_{n\ge0}3^nx^n - \sum_{n\ge0}x^n \\
+      [x^n]G(x)=A_n=3^n-1
+      \)
+    </p>
 
     <h2>
       Exercise 1.6
