@@ -198,4 +198,25 @@
     \(\frac14\left(-(\frac{1}{3}+\frac{1}{1})+(\frac{1}{5}+\frac{1}{3})-(\frac{1}{7}+\frac{1}{5})+...+(-1)^n(\frac{1}{2n+1}+\frac{1}{2n-1})\right)\\
     \frac14\left(-1+(-1)^n(2n-1)\right)=\frac{(-1)^n}{8n-4}-\frac14\)
   </p>
+  <h2>
+    Exercise 3.31
+  </h2>
+  <p>
+    \(\zeta(k)=1+\frac1{2^k}+\frac1{3^k}+...=\sum\limits_{j\ge1}\frac1{j^k} \\
+    \text{Prove }\sum_{k\ge2}(\zeta(k)-1)=1 \\
+    (\sum\limits_{j\ge1}\frac1{j^k})-1=\sum\limits_{j\ge2}\frac1{j^k} \\
+    \sum\limits_{k\ge2}(\zeta(k)-1)=\sum\limits_{k,j\ge2}\frac1{j^k}=\sum\limits_{j\ge2}\sum\limits_{k\ge2}\frac1{j^k} \\
+    \sum\limits_{j\ge2}\sum\limits_{k+2\ge2}\frac1{j^{k+2}}=
+    \sum\limits_{j\ge2}\left(\frac1{j^2}\sum\limits_{k+2\ge2}\frac1{j^{k}}\right)=
+    \sum\limits_{j\ge2}\left(\frac1{j^2}\sum\limits_{k\ge0}\frac1{j^{k}}\right) \\
+    S= \\
+    S=1+\frac1j+\frac1{j^2}+\frac1{j^3}+...\\
+    S\cdot j=j+1+\frac1j+\frac1{j^2}+...\\
+    S\cdot j=j+S \\
+    S(j-1)=j \\
+    \sum\limits_{k\ge0}\frac1{j^{k}}=\frac j{j-1} \\
+    \sum\limits_{k\ge2}(\zeta(k)-1)=\sum\limits_{j\ge2}\left(\frac1{j^2}\cdot\frac j{j-1}\right)=\sum\limits_{j\ge2}\left(j\cdot\frac 1{j(j-1)}\right) \\
+    \sum\limits_{j\ge2}\left(j\cdot\frac 1{j(j-1)}\right)=1+\frac12+\frac13+\frac14+...=1
+    \)
+  </p>
 </html>
