@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+    </script>
+  </head>
+  <body>
+    <h2>
+      2.3-3
+    </h2>
+    <p>
+      \(T(2)=2 \\
+      T(n)=2T(n/2)+n,\text{ where } n=2^k\text{ and }k>1 \\
+      T(n)= n \log_2 n \\
+      \text{Basis: }T(2^1)=2^1 \log_2 2^1=2 \\
+      \text{Inductive Step: } \\
+      2^k \log_2 2^k=2(2^{k-1} \log_22^{k-1})+2^k \\
+      k2^k=2(2^{k-1}\cdot(k-1))+2^k=2(k2^{k-1}-2^{k-1})+2^k \\
+      k2^k=k2^k-2^k+2^k
+      \)
+    </p>
+  </body>
+</html>
